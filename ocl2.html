@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<script src="ocl2.js"></script>
+<head>
+<meta charset="utf-8" />
+<style>.title{color:#000;font-family:arial;font-size:18px;font-weight:700;padding-top:10px;padding-bottom:10px}.code{background:#ccc;font-family:courier;font-size:14px;font-weight:400;padding:2px}.code,a{color:#000}.textareaBar{padding:10px 10px 8px;border-top:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #ccc;margin-left:2px;margin-right:2px}</style>
+</head>
+<body style="background: #444444; color: black; font-family: Times; font-size: 16px;" onload="document.getElementById('code').focus(); interval = window.setInterval('checkCodeTextbox();', 500);">
+<div style="width: 700px; background: white; padding: 20px; margin-left: auto; margin-right: auto;">
+<span class="title">= = = OCL 2 COMPILER = = =</span>
+<br /><br />
+<div style="float: left;">
+<div class="textareaBar">
+<div style="float: left;">
+OCL Code:
+</div>
+<div style="float: right;">
+<button onclick="translateCodeFromTextBox();">Translate</button> 
+<button onclick="testCodeFromTextBox();" style="margin-left: 5px">Test</button> 
+<input type="checkbox" id="testAfterPaste" style="margin-left: 20px" checked="checked" />&nbsp;Test after paste
+</div>
+<br style="clear: both;" />
+</div>
+<textarea id="code" rows="13" cols="43" style="font-size: 16px;"></textarea>
+</div>
+<br style="clear: both;" />
+<p id="javascriptParagraph" style="display: none;"> 
+<span>Javascript code:</span><br /><br /> 
+<textarea id="javascriptCode" rows="8" cols="40"></textarea> 
+</p> 
+<p>
+Last Update: 11/3/11 (Added text commands for canvas)
+</p>
+<p> 
+Ostracod Command Language (OCL) is a code which is compiled into JavaScript and executed. For help on how to write code, go <a href="ocl2guide.html">the guide</a>
+<br /><br />
+The older compiler can be found <a href="http://www.ostracodfiles.com/pumpkin/cypher.html">here</a>.
+</p>
+</div>
+<div style="width: 700px; margin-left: auto; margin-right: auto; margin-bottom: 50px;">
+<div style="background: white; text-align: center; width: 300px; margin-left: auto; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; padding-top: 10px;">
+Forked from &ldquo;<a href="http://www.ostracodfiles.com/pumpkin/ocl2.html">Ostracod files: OCL Compiler</a>&rdquo;<br /><br />
+<a href="http://www.ostracodfiles.com/ostracod/main.html">Return to the Ostracod Pond</a><br /><br />
+fork to <a href="https://ostrafile-1.github.io/">git123hub's Ostracod files archive</a><br /><br />
+<a href="https://git123hub.github.io/">返回到首页 (Return to Homepage)</a>
+</div>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{"bdSize":16},"slide":{"type":"slide","bdImg":"5","bdPos":"right","bdTop":"100"},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"32"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='https://git123hub.github.io/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</body>
+</html>
