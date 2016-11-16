@@ -8,18 +8,19 @@ a {text-decoration: none;} .shift {display:inline-block; padding-left: 35px;}
 </head>
 <body>
 <pre>
-* <a href="https://git123hub.github.io/">返回到首页</a>
+* <a href="?gh=index/">返回到首页</a>
 * <a href="?hr=ostra/pond.html">Ostracod 的文件</a>
 <span class="shift">* <a href="?hr=pumpkin/ocl2.html">OCL 程序</a>
-<span class="shift">* <a href="?hr=pumpkin/spiral.html">Circle spiral</a> <a href="https://git123hub.github.io/circle-spiral">带 HTML5 &lt;canvas&gt;</a>
+<span class="shift">* <a href="?hr=pumpkin/spiral.html">Circle spiral</a> <a href="?gh=circle-spiral">带 HTML5 &lt;canvas&gt;</a>
 * <a href="/minechaos.html">Minechaos</a></span></span>
 <span style="margin:10px 0;display:inline-block">本网页的短网址是 <span style="padding:2px;background:#d9d9d9;border:1px solid #9d9d9d">http://980.so/2zsZA8</span></span>
 easycounter: <a href="http://www.easycounter.com/"><img src="//www.easycounter.com/counter.php?git123hub" border="0" alt="Hit Counter"></a>
 </pre>
 <script type="text/javascript">
   var urisearch = location.search, tmp;
-  if (tmp = urisearch.match(/[\?\&]hr=([^\?\&\#]*)/)) {
-    location.href = "http://www.ostracodfiles.com/" + tmp[1];
+  switch ((tmp = urisearch.match(/[\?\&](\w+)=([^\?\&\#]*)/))[1]) {
+    case "hr": location.href = "http://www.ostracodfiles.com/" + tmp[2]; break;
+    case "gh": location.href = "https://git123hub.github.io/" + tmp[2]; break;
   }
   window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"slide":{"type":"slide","bdImg":"0","bdPos":"right","bdTop":"100"},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"32"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='https://git123hub.github.io/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 </body>
